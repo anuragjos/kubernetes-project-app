@@ -12,4 +12,4 @@ RUN unzip model-portfolio.zip
 RUN cp -rvf model-portfolio/* .
 RUN rm -rf model-portfolio model-portfolio.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
-EXPOSE 88 3389
+EXPOSE 88 
