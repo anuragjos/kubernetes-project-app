@@ -6,10 +6,10 @@ MAINTAINER joshianurag088@gmail.com
 RUN yum install -y httpd \
  zip \
  unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page281/koppee.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page2/touch-of-purple.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip koppee.zip
-RUN cp -rvf koppee/*  .
-RUN rm -rf koppee koppee.zip
+RUN unzip touch-of-purple.zip
+RUN cp -rvf touch-of-purple/*  .
+RUN rm -rf touch-of-purple touch-of-purple.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 88
