@@ -12,4 +12,4 @@ RUN unzip creative-studio.zip
 RUN cp -rvf creative-studio/* .
 RUN rm -rf creative-studio creative-studio.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
-EXPOSE 88 
+EXPOSE 80 
